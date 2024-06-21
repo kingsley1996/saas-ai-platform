@@ -1,5 +1,7 @@
 # AI SaaS Platform with Next.js 13, React, Tailwind, Prisma, Stripe, Clerk, OpenAPI, Replicate, PlanetScale, MySQL, TypeScript & Crisp
 
+![athena-ai](https://i.ibb.co/NFQgkwf/Screenshot-2024-06-21-at-21-23-35.png)
+
 Features:
 
 - Tailwind design
