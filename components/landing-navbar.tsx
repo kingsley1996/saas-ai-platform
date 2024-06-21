@@ -20,8 +20,8 @@ export default function LandingNavbar() {
   return (
     <nav className="p-4 bg-transparent flex items-center justify-between">
       <Link href="/" className="flex items-center">
-        <div className="relative h-8 w-8 mr-4">
-          <Image fill alt="Genius Logo" src="/logo.png" />
+        <div className="relative h-12 w-12 mr-2">
+          <Image fill alt="Athena Logo" src="/logo.png" />
         </div>
         <h1 className={cn('text-2xl font-bold text-white', font.className)}>
           Athena
