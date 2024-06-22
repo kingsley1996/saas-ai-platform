@@ -1,36 +1,37 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const testimonials = [
   {
-    name: "Swadesh",
-    avatar: "SN",
-    title: "Software Engineer",
-    description: "This is the best application I've ever used!"
+    name: 'Swadesh',
+    avatar: 'SN',
+    title: 'Software Engineer',
+    description: "This is the best application I've ever used!",
   },
   {
-    name: "Saroj",
-    avatar: "SS",
-    title: "Designer",
-    description: "I use this daily for generating new photos!"
+    name: 'Saroj',
+    avatar: 'SS',
+    title: 'Designer',
+    description: 'I use this daily for generating new photos!',
   },
   {
-    name: "Santosh",
-    avatar: "SD",
-    title: "CEO",
+    name: 'Santosh',
+    avatar: 'SD',
+    title: 'CEO',
     description:
-      "This app has changed my life, cannot imagine working without it!"
+      'This app has changed my life, cannot imagine working without it!',
   },
   {
-    name: "Kanha",
-    avatar: "SP",
-    title: "CFO",
-    description: "The best in class, definitely worth the premium subscription!"
-  }
+    name: 'Kanha',
+    avatar: 'SP',
+    title: 'CFO',
+    description:
+      'The best in class, definitely worth the premium subscription!',
+  },
 ];
 
 export default function LandingContent() {

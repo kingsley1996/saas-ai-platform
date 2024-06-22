@@ -80,3 +80,60 @@ body,
       @apply bg-background text-foreground;
     }
   }
+
+  /* Custom CSS */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(#2d2d2d 1px, transparent 1px),
+    linear-gradient(to right, #2d2d2d 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Custom CSS (e.g., globals.css) */
+
+.card {
+  position: relative;
+  perspective: 1000px; /* Độ sâu của hiệu ứng flip */
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: rotateY(180deg); /* Đảo card 180 độ khi hover */
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Đảo nội dung card 180 độ khi hover */
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ẩn phần mặt sau của card */
+}
+
+.card-front {
+  z-index: 2; /* Phía trước khi flip */
+  background-color: #1a1a1a; /* Màu nền */
+  border-radius: 12px; /* Bo góc */
+  padding: 20px; /* Khoảng cách bên trong */
+  color: #fff; /* Màu chữ trắng */
+}
+
+.card-back {
+  z-index: 1; /* Phía sau khi flip */
+  transform: rotateY(180deg); /* Đảo ngược nội dung 180 độ */
+  background-color: #1a1a1a; /* Màu nền */
+  border-radius: 12px; /* Bo góc */
+  padding: 20px; /* Khoảng cách bên trong */
+  color: #fff; /* Màu chữ trắng */
+}
