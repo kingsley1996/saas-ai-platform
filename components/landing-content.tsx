@@ -7,28 +7,28 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const testimonials = [
   {
-    name: 'Swadesh',
-    avatar: 'SN',
+    name: 'Samuel Dang',
+    avatar: 'SD',
     title: 'Software Engineer',
     description: "This is the best application I've ever used!",
   },
   {
-    name: 'Saroj',
-    avatar: 'SS',
+    name: 'Marvis Antonio',
+    avatar: 'MA',
     title: 'Designer',
     description: 'I use this daily for generating new photos!',
   },
   {
-    name: 'Santosh',
-    avatar: 'SD',
-    title: 'CEO',
+    name: 'Cristian Ronaldo',
+    avatar: 'CR',
+    title: 'Football Player',
     description:
       'This app has changed my life, cannot imagine working without it!',
   },
   {
-    name: 'Kanha',
-    avatar: 'SP',
-    title: 'CFO',
+    name: 'Lionel Messi',
+    avatar: 'LM',
+    title: 'Football Player',
     description:
       'The best in class, definitely worth the premium subscription!',
   },
@@ -44,7 +44,7 @@ export default function LandingContent() {
         {testimonials.map((item) => (
           <Card
             key={item.description}
-            className="bg-[#192339] border-none text-white"
+            className="h-72 shadow-inner bg-[#192339] border-none text-[#dddee0] box-shadow"
           >
             <CardHeader>
               <div className="flex flex-row items-center">
